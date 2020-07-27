@@ -52,19 +52,29 @@
           <h3>นายภาสกร โพธิ์ใหญ่ 60160305</h3>
         </div>
 
-        <button class="col-sm-2 btn btn-secondary fas fa-eye" onclick="ChageBackground()" style="background: #11A088 ;"> Chage background</button>
+        <!-- <button class="col-sm-2 btn btn-secondary fas fa-eye" onclick="ChageBackground()" style="background: #11A088 ;"> Chage background</button>
         <button class="col-sm-2 btn btn-secondary fas fa-eye-slash" onclick="reset()" style="background: #17C2A6  ;">  Reset</button>
       
         <P ALIGN = "RIGHT" >
             <a href="#" class="slideDown_table btn btn-success">เปิดตาราง</a>
             <a href="#" class="slideUp_table btn btn-secondary">ปิดตาราง</a>
-        </P>
+        </P> -->
+
+        <div class="form-inline">
+          <div class="form-group col-xs-12 col-sm-12 col-md-12 my-3">
+            <button class="col-sm-2 btn btn-secondary fas fa-eye" onclick="ChageBackground()" style="background: #11A088 ;"> Chage</button>
+            <button class="col-sm-2 btn btn-secondary fas fa-eye-slash" onclick="reset()" style="background: #17C2A6  ;">  Reset</button>
+            <a class="col-sm-4"></a>
+            <button href="#" class="col-sm-2 slideDown_table btn btn-success">เปิดตาราง</button>
+            <button href="#" class="col-sm-2 slideUp_table btn btn-secondary">ปิดตาราง</button>
+          </div>
+      </div>
 
         <div id="table"> 
-        <table class="table table-striped">
+        <table class="table table-striped table-dark">
             <thead>
-              <tr class="bg-success" style="color: white;"> 
-                <th scope="col" style="color: white;">Title</th>
+              <tr class="bg-success"> 
+                <th scope="col" style="text-align: center; color: white;" id="pa">Title</th>
                 <th scope="col" style="text-align: center; color: white;">Name</th>
                 <th scope="col" style="text-align: center; color: white;">Date</th>
                 <th scope="col" style="text-align: center; color: white;">Work</th>
@@ -72,13 +82,13 @@
             </thead>
             <tbody>
               <tr>
-                <th style="color: white;" scope="row">Lab 1</th>
-                <td style="color: white;">คำถามท้ายบทที่ 1 เทคโนโลยีรอบๆ ตัวเรา</td>
-                <td style="color: white;"><center>14/07/2020</center></td>
+                <th scope="row">Lab 1</th>
+                <td>คำถามท้ายบทที่ 1 เทคโนโลยีรอบๆ ตัวเรา </td>
+                <td><center>14/07/2020</center></td>
                 <td><center><a href="lab1_60160305.pdf" class="btn btn-success">ไปที่งาน</a></center></td>
               </tr>
 
-              <tr style="background-color: #ffffffb6 ;">
+              <tr style="background-color: #ffffff2f ;" id="p1">
                 <th scope="row">Lab 2</th>
                 <td >คำถามท้ายบทที่ 2 ผลกระทบของไอทีต่อสังคมดิจิตอล</td>
                 <td ><center>21/07/2020</center></td>
@@ -86,13 +96,13 @@
               </tr>
 
               <tr>
-                <th style="color: white;" scope="row">Lab 3</th>
-                <td style="color: white;">คำถามท้ายบทที่ 3 จริยธรรมกับกระแสสังตมยุคใหม่</td>
-                <td style="color: white;"><center><h3>-</h3></center></td>
+                <th scope="row">Lab 3</th>
+                <td>คำถามท้ายบทที่ 3 จริยธรรมกับกระแสสังตมยุคใหม่</td>
+                <td><center><h3>-</h3></center></td>
                 <td><center><a href="" class="btn btn-secondary">ดำเนินการ</a></center></td>
               </tr>
 
-              <tr style="background-color: #ffffffb6 ;">
+              <tr style="background-color: #ffffff2f ;">
                 <th scope="row">Lab 4</th>
                 <td>คำถามท้ายบทที่ 4 จริยธรรมทางธุรกิจและในองค์กร</td>
                 <td><center><h3>-</h3></center></td>
@@ -100,13 +110,13 @@
               </tr>
 
               <tr>
-                <th style="color: white;" scope="row">Lab 5</th>
-                <td style="color: white;">คำถามท้ายบทที่ 5 จริยธรรมทางเทคโนโลยีสารสนเทศ</td>
-                <td style="color: white;"><center><h3>-</h3></center></td>
+                <th scope="row">Lab 5</th>
+                <td>คำถามท้ายบทที่ 5 จริยธรรมทางเทคโนโลยีสารสนเทศ</td>
+                <td><center><h3>-</h3></center></td>
                 <td><center><a href="" class="btn btn-secondary">ดำเนินการ</a></center></td>
               </tr>
 
-              <tr style="background-color: #ffffffb6 ;">
+              <tr style="background-color: #ffffff2f ;">
                 <th scope="row">Lab 6</th>
                 <td>คำถามท้ายบทที่ 6 จริยธรรมสําหรับผู้เชี่ยวชาญด้านไอทีและผู้ใช้ไอที</td>
                 <td><center><h3>-</h3></center></td>
@@ -114,13 +124,13 @@
               </tr>
 
               <tr>
-                <th style="color: white;" scope="row">Lab 7</th>
-                <td style="color: white;">คำถามท้ายบทที่ 7 อาชญากรรมคอมพิวเตอร์และอินเทอร์เน็ต</td>
-                <td style="color: white;"><center><h3>-</h3></center></td>
+                <th scope="row">Lab 7</th>
+                <td>คำถามท้ายบทที่ 7 อาชญากรรมคอมพิวเตอร์และอินเทอร์เน็ต</td>
+                <td><center><h3>-</h3></center></td>
                 <td><center><a href="" class="btn btn-secondary">ดำเนินการ</a></center></td>
               </tr>
 
-              <tr style="background-color: #ffffffb6 ;">
+              <tr style="background-color: #ffffff2f ;">
                 <th scope="row">Lab 8</th>
                 <td>คำถามท้ายบทที่ 8 ความเป็นส่วนตัว</td>
                 <td><center><h3>-</h3></center></td>
@@ -128,13 +138,13 @@
               </tr>
 
               <tr>
-                <th style="color: white;" scope="row">Lab 9</th>
-                <td style="color: white;">คำถามท้ายบทที่ 9 ทรัพย์สินทางปัญญา</td>
-                <td style="color: white;"><center><h3>-</h3></center></td>
+                <th scope="row">Lab 9</th>
+                <td>คำถามท้ายบทที่ 9 ทรัพย์สินทางปัญญา</td>
+                <td><center><h3>-</h3></center></td>
                 <td><center><a href="" class="btn btn-secondary">ดำเนินการ</a></center></td>
               </tr>
 
-              <tr style="background-color: #ffffffb6 ;">
+              <tr style="background-color: #ffffff2f ;">
                 <th scope="row">Lab 10</th>
                 <td>คำถามท้ายบทที่ 10 กฎหมายเทคโนโลยีสารสนเทศ และกฎหมายอื่นๆ</td>
                 <td><center><h3>-</h3></center></td>
@@ -142,9 +152,9 @@
               </tr>
 
               <tr>
-                <th style="color: white;" scope="row">Lab 11</th>
-                <td style="color: white;">คำถามท้ายบทที่ 11 สรุป เสรีภาพในการแสดงความคิดเห็น</td>
-                <td style="color: white;"><center><h3>-</h3></center></td>
+                <th scope="row">Lab 11</th>
+                <td>คำถามท้ายบทที่ 11 สรุป เสรีภาพในการแสดงความคิดเห็น</td>
+                <td><center><h3>-</h3></center></td>
                 <td><center><a href="" class="btn btn-secondary">ดำเนินการ</a></center></td>
               </tr>
 
