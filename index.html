@@ -9,7 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script type="text/javascript">     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><!-- icon -->
+
+    <script type="text/javascript">        
         $(function() 
         {
             $('.slideUp_table').click(function()
@@ -24,6 +26,19 @@
                 //Sliding effect just replace fadeIn() to slideDown()
             });
         });
+        
+      function ChageBackground() {
+        // document.body.style.background = "green"; //เปลี่ยนสีพื้นหลัง
+        document.body.style.backgroundImage = "url('image/bg-1.png')"; //เปลี่ยนรูปิพ้นหลัง
+        document.getElementById("p1").style.color="white";
+        // document.getElementById("color-title").style.color="white";
+        document.getElementById("color").style.color="white";
+
+      }
+      function reset(){
+        document.body.style.background = "";
+        document.getElementById("p1").style.color="black";
+      }
     </script>
     <style>
         #box
@@ -37,32 +52,41 @@
     <title>60160305</title>
 
 </head>
-<body background="image/bg-1.png">
+<body >
     <div class="container">
         <br>
-        <h1 style="color: white;">Social Issues and Ethics for IT Professional</h1>
-        <h3 style="color: white;">นายภาสกร โพธิ์ใหญ่ 60160305</h3>
-        <P ALIGN = "RIGHT" >
-            <a href="#" class="slideDown_table btn btn-success">เปิดตาราง</a>
-            <a href="#" class="slideUp_table btn btn-secondary">ปิดตาราง</a>
-        </P>
+        <div id="p1">
+          <h1>Social Issues and Ethics for IT Professional</h1>
+          <h3>นายภาสกร โพธิ์ใหญ่ 60160305</h3>
+        </div>
+
+        <div class="form-inline">
+            <div class="form-group col-xs-12 col-sm-12 col-md-12 my-3">
+              <button class="col-sm-2 btn btn-secondary fas fa-eye" onclick="ChageBackground()" style="background: #11A088 ;"> Chage background</button>
+              <button class="col-sm-2 btn btn-secondary fas fa-eye-slash" onclick="reset()" style="background: #17C2A6  ;">  Reset</button>
+              <a class="col-sm-6"></a>
+              <button href="#" class="slideDown_table btn btn-success">เปิดตาราง</button>
+              <button href="#" class="slideUp_table btn btn-secondary">ปิดตาราง</button>
+            </div>
+        </div>
         
-        <div id="table"> 
+    
+        <div id="table p1"> 
         <table class="table table-striped">
             <thead>
-              <tr class="bg-success" style="color: white;"> 
-                <th scope="col" style="color: white;">Title</th>
+              <tr class="bg-success" > 
+                <th scope="col" style="text-align: center; color: white;">Title</th>
                 <th scope="col" style="text-align: center; color: white;">Name</th>
                 <th scope="col" style="text-align: center; color: white;">Date</th>
                 <th scope="col" style="text-align: center; color: white;">Work</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th style="color: white;" scope="row">Lab 1</th>
-                <td style="color: white;">คำถามท้ายบทที่ 1 เทคโนโลยีรอบๆ ตัวเรา</td>
-                <td style="color: white;"><center>14/07/2020</center></td>
-                <td><center><a href="lab1_60160305.pdf" class="btn btn-success">ไปที่งาน</a></center></td>
+              <tr id="p1">
+                <th id="p1" scope="row">Lab 1</th>
+                <td id="p1" >คำถามท้ายบทที่ 1 เทคโนโลยีรอบๆ ตัวเรา</td>
+                <td id="p1" ><center>14/07/2020</center></td>
+                <td id="p1" ><center><a href="lab1_60160305.pdf" class="btn btn-success">ไปที่งาน</a></center></td>
               </tr>
 
               <tr style="background-color: #ffffffb6 ;">
@@ -73,9 +97,9 @@
               </tr>
 
               <tr>
-                <th style="color: white;" scope="row">Lab 3</th>
-                <td style="color: white;">คำถามท้ายบทที่ 3 จริยธรรมกับกระแสสังตมยุคใหม่</td>
-                <td style="color: white;"><center><h3>-</h3></center></td>
+                <th scope="row">Lab 3</th>
+                <td>คำถามท้ายบทที่ 3 จริยธรรมกับกระแสสังตมยุคใหม่</td>
+                <td><center><h3>-</h3></center></td>
                 <td><center><a href="" class="btn btn-secondary">ดำเนินการ</a></center></td>
               </tr>
               
@@ -87,9 +111,9 @@
               </tr>
 
               <tr>
-                <th style="color: white;" scope="row">Lab 5</th>
-                <td style="color: white;">คำถามท้ายบทที่ 5 จริยธรรมทางเทคโนโลยีสารสนเทศ</td>
-                <td style="color: white;"><center><h3>-</h3></center></td>
+                <th scope="row">Lab 5</th>
+                <td>คำถามท้ายบทที่ 5 จริยธรรมทางเทคโนโลยีสารสนเทศ</td>
+                <td><center><h3>-</h3></center></td>
                 <td><center><a href="" class="btn btn-secondary">ดำเนินการ</a></center></td>
               </tr>
 
@@ -101,9 +125,9 @@
               </tr>
 
               <tr>
-                <th style="color: white;" scope="row">Lab 7</th>
-                <td style="color: white;">คำถามท้ายบทที่ 7 อาชญากรรมคอมพิวเตอร์และอินเทอร์เน็ต</td>
-                <td style="color: white;"><center><h3>-</h3></center></td>
+                <th scope="row">Lab 7</th>
+                <td>คำถามท้ายบทที่ 7 อาชญากรรมคอมพิวเตอร์และอินเทอร์เน็ต</td>
+                <td><center><h3>-</h3></center></td>
                 <td><center><a href="" class="btn btn-secondary">ดำเนินการ</a></center></td>
               </tr>
 
@@ -115,9 +139,9 @@
               </tr>
 
               <tr>
-                <th style="color: white;" scope="row">Lab 9</th>
-                <td style="color: white;">คำถามท้ายบทที่ 9 ทรัพย์สินทางปัญญา</td>
-                <td style="color: white;"><center><h3>-</h3></center></td>
+                <th scope="row">Lab 9</th>
+                <td>คำถามท้ายบทที่ 9 ทรัพย์สินทางปัญญา</td>
+                <td><center><h3>-</h3></center></td>
                 <td><center><a href="" class="btn btn-secondary">ดำเนินการ</a></center></td>
               </tr>
 
@@ -129,9 +153,9 @@
               </tr>
 
               <tr>
-                <th style="color: white;" scope="row">Lab 11</th>
-                <td style="color: white;">คำถามท้ายบทที่ 11 สรุป เสรีภาพในการแสดงความคิดเห็น</td>
-                <td style="color: white;"><center><h3>-</h3></center></td>
+                <th scope="row">Lab 11</th>
+                <td>คำถามท้ายบทที่ 11 สรุป เสรีภาพในการแสดงความคิดเห็น</td>
+                <td><center><h3>-</h3></center></td>
                 <td><center><a href="" class="btn btn-secondary">ดำเนินการ</a></center></td>
               </tr>
  
@@ -140,4 +164,4 @@
         </div>
     </div>
 </body>
-</html></htmm>
+</html>
